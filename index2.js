@@ -3,7 +3,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const NewsAPI = require('newsapi');
-const newsapi = new NewsAPI('YOUR-API-KEY-HERE');
+const newsapi = new NewsAPI('0e7c2f5cd99b4024b190c095e0d63b10');
 const server = express();
 
 server.use(bodyParser.urlencoded({
@@ -51,8 +51,8 @@ server.get('/news', function (req, res) {
         } else {
             responseToSend = {
                 "messages": [
-                    { "text": `Opps! Looks like I don't have any articles on ${query} as of now.` },
-                    { "text": "Please feel free to check back later or try searching for another topic." }
+                    { "text": `Postcoital bliss or a zombie apocalypse: it's quiet in DC.` },
+                    { "text": "Feel free to check back later, but run if you see any zombies." }
                 ]
             }
             return res.json(responseToSend);
