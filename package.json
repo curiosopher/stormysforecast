@@ -2,6 +2,9 @@
   "name": "newsapichatfuel",
   "version": "1.0.0",
   "description": "NewsAPI",
+    "engines": {
+    "node": "8.11.0"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
