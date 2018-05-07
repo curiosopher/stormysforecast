@@ -14,7 +14,7 @@ server.use(bodyParser.json());
 server.get('/news', function (req, res) {
     const query = req.query.query;
     newsapi.v2.topHeadlines({
-        q: query || 'chatbots',
+        q: query || 'donald trump',
         sources: 'vice-news',
     }).then(response => {
         let responseToSend;
